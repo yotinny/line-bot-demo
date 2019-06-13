@@ -28,7 +28,7 @@ app.listen(port)
 function reply(reply_token, msg) {
     let headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer {xxxxx}'
+        'Authorization': 'Bearer {sh8cBEdOgeY6to3tnWC2i2f3dmc8uuM/FtXxCkVNbJjmKRG4zZhurk1tGM92MgaRDjzH9YzzkYflS+06P8Oz0jO6Z5FavJqkAkDOlGcCcpOgDhcMwjiAXZAIFioGpUQMDyB0isZ/l+mI32McYykedAdB04t89/1O/w1cDnyilFU=}'
     }
 
     let body = JSON.stringify({
