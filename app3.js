@@ -14,7 +14,7 @@ aimlInterpreter.loadAIMLFilesIntoArray(['./test-aiml.xml'])
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.post('/webhook', (req, res) => {
+app.post('https://ilm-webhook.herokuapp.com/webhook', (req, res) => {
     let reply_token = req.body.events[0].replyToken
     let msg = req.body.events[0].message.text
     aimlInterpreter.findAnswerInLoadedAIMLFiles(msg, (answer, wildCardArray, input) => {
